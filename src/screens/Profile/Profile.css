@@ -1,0 +1,130 @@
+.profile{
+    width: 100%;
+    display: flex;
+    display: flex;
+    background: url('../../assets/Media/Images/dashboard.png') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 935px;
+    z-index: -1;
+    /* overflow-x: hidden; */
+    backdrop-filter: blur(272px); 
+    /* position: relative; */
+}
+
+.sidebar-column{
+    width: 16.6%;
+    background-color: rgb(16, 121, 121);
+}
+
+.profile .main-column{
+    width: 83.4%;
+    background-color: rgb(61, 117, 239);
+}
+
+.top-bar {
+    margin-left: 15px;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .p-span{
+    display: flex;
+    gap: 5px;
+  }
+  
+  .p-span p{
+    color: #E2E8F04D;
+  }
+  
+  .left {
+    color: white;
+  }
+  
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 10px;
+  }
+  
+  .search-container {
+    position: relative;
+    width: 170px;
+    color: white;
+  }
+  
+  .search-container input[type="search"] {
+    width: 100%;
+    padding: 8px 8px 8px 35px;
+    border-radius: 15px !important;
+    border: 1px solid #E2E8F04D;
+    font-size: 14px;
+    height: 34px;
+    background: none;
+  }
+  
+  .search-container input[type="search"]:focus {
+    border: 1px solid #E2E8F04D;
+    outline: none;
+  }
+  
+  .search-container .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  .sign-in-text {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #E2E8F04D;
+  }
+  
+  .right img {
+    height: 18px;
+    width: 18px;
+    object-fit: contain;
+  }
+
+  .top-box{
+    width: 100%;
+    height: 70vh;
+    padding-left: 15px;
+    display: flex;
+    background-color: rgb(232, 56, 56);
+  }
+
+  .topBox-left{
+    width: 60%;
+    display: flex;
+    margin-right: 15px;
+    height: 60vh;
+    background-color: rgb(24, 24, 164);
+  }
+
+  .topBox-right{
+    width: 40%;
+    height: 60vh;
+    background-color: blanchedalmond;
+  }
+
+  .topBox-1{
+    width: 49%;
+    height: 40vh;
+    background-color: antiquewhite;
+  }
+
+  .topBox-2{
+    width: 48.5%;
+    height: 40vh;
+    margin-left: 15px;
+    background-color: rgb(243, 200, 146);
+  }

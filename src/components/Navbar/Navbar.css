@@ -1,0 +1,67 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 70px;
+  border-radius: 20px;
+  position: absolute;
+  color:white; 
+  backdrop-filter: blur(42px);
+  border: 2px solid;
+  border-image: radial-gradient( rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)) 1;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.logo{
+  margin-left: 20px;
+  background: linear-gradient(94.56deg, #FFFFFF 79.99%, #21242F 102.65%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  font-size: 10px;
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.ListContainer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-right: 40px;
+}
+
+.btn button {
+  width: 150px;
+  height: 34.97px;
+  margin-right: 20px;
+  border-radius: 12px;
+  background: rgba(0, 117, 255, 1);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn button:hover {
+  background: rgba(0, 100, 220, 1); 
+}
+
+img{
+  width: 14px;
+  height: 15px;
+  object-fit: contain;
+  
+}
