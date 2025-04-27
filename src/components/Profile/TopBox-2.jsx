@@ -16,7 +16,7 @@ const CreditBalance = () => {
         bgcolor: 'rgba(255, 255, 255, 0.05)',
         borderRadius: 4,
         width: 254,
-        height: 70,
+        height: 68,
         p: 2,
         mb: 1,
         display: 'flex',

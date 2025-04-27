@@ -6,7 +6,7 @@ const CreditCard = () => {
     <Box
       sx={{
         width: '305px',
-        height: '200px',
+        height: '190px',
         borderRadius: '20px',
         p: 2,
         background: 'linear-gradient(135deg, #0055ff 0%, #000066 100%)',

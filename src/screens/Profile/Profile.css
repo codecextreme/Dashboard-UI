@@ -16,12 +16,12 @@
 
 .sidebar-column{
     width: 16.6%;
-    background-color: rgb(16, 121, 121);
+    /* background-color: rgb(16, 121, 121); */
 }
 
 .profile .main-column{
     width: 83.4%;
-    background-color: rgb(61, 117, 239);
+    /* background-color: rgb(61, 117, 239); */
 }
 
 .top-bar {
@@ -104,10 +104,9 @@
 
   .topBox-left{
     width: 60%;
-    display: flex;
     margin-right: 15px;
     height: 60vh;
-    background-color: rgb(24, 24, 164);
+    background-color: rgb(255, 255, 255);
   }
 
   .topBox-right{
@@ -116,15 +115,28 @@
     background-color: blanchedalmond;
   }
 
+  .top-upper1{
+    display: flex;
+  }
+
   .topBox-1{
     width: 49%;
-    height: 40vh;
+    height: 34.5vh;
     background-color: antiquewhite;
   }
 
   .topBox-2{
     width: 48.5%;
-    height: 40vh;
+    height: 34.5vh;
     margin-left: 15px;
-    background-color: rgb(243, 200, 146);
+    background-color: rgb(200, 173, 141);
   }
+
+  .bottom-box1{
+    margin-top: 15px;
+    width: 100%;
+    height: 22.8vh;
+    background-color: rgb(86, 10, 158);
+  }
+
+  

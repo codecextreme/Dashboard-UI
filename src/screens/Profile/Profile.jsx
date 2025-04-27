@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import TopBox_2 from "../../components/Profile/TopBox-2";
 import TopBox_1 from "../../components/Profile/TopBox-1";
+import Bottom_Box from "../../components/Profile/Bottom-Box";
+import Right_Box from "../../components/Profile/Right-Box";
 import "./Profile.css";
 import search from "../../../src/assets/Media/Icons/search.png";
 import sin1 from "../../../src/assets/Media/Icons/sin1.png";
@@ -42,15 +44,21 @@ export default function Profile() {
         </div>
         <div className="top-box">
           <div className="topBox-left">
-            <div className="topBox-1">
-            <TopBox_1/>
+            <div className="top-upper1">
+              <div className="topBox-1">
+                <TopBox_1 />
+              </div>
+              <div className="topBox-2">
+                <TopBox_2 />
+              </div>
             </div>
-            <div className="topBox-2">
-              <TopBox_2/>
+            <div className="bottom-box1">
+                <Bottom_Box/>
             </div>
+
           </div>
           <div className="topBox-right">
-          
+            <Right_Box/>
           </div>
         </div>
       </div>
