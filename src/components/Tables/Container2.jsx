@@ -81,7 +81,7 @@ const Projects = () => {
       <TableContainer>
         <Table>
           <TableHead>
-            <TableRow sx={{ '& th': { py: 0.5, pt: 2} }}> {/* Reduced vertical padding */}
+            <TableRow sx={{ '& th': { py: 0.3, pt: 1} }}> {/* Reduced vertical padding */}
 
               <TableCell sx={{ color: 'gray', borderBottom: '1px solid rgba(255,255,255,0.1)' }}>COMPANIES</TableCell>
               <TableCell sx={{ color: 'gray', borderBottom: '1px solid rgba(255,255,255,0.1)' }}>BUDGET</TableCell>
@@ -92,7 +92,7 @@ const Projects = () => {
           </TableHead>
           <TableBody>
             {projects.map((project) => (
-    <TableRow key={project.id} sx={{ '& td': { py: 0.6 } }}>
+    <TableRow key={project.id} sx={{ '& td': { py: 0.7 } }}>
                 <TableCell 
                   sx={{ 
                     borderBottom: '1px solid rgba(255,255,255,0.1)',

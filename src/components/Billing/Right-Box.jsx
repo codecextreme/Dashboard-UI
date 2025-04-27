@@ -36,11 +36,8 @@ const InvoiceItem = ({ invoice }) => (
       display: 'flex',
       justifyContent: 'space-between',
       alignItems: 'center',
-      py: 1,
-      borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
-      '&:last-child': {
-        borderBottom: 'none'
-      }
+      py: 0.5,
+     
     }}
   >
     <Box>
@@ -52,8 +49,8 @@ const InvoiceItem = ({ invoice }) => (
       </Typography>
     </Box>
     
-    <Box sx={{ display: 'flex', alignItems: 'center', gap: 3 }}>
-      <Typography color="white" sx={{ fontSize: '14px' }}>
+    <Box sx={{ display: 'flex', alignItems: 'center', gap: 0 }}>
+      <Typography color="gray" sx={{ fontSize: '12px' }}>
         ${invoice.amount}
       </Typography>
       <Button
@@ -65,7 +62,9 @@ const InvoiceItem = ({ invoice }) => (
           }
         }}
       >
+        <Typography sx={{fontSize: '10px', color:"white"}}>
         PDF
+        </Typography>
       </Button>
     </Box>
   </Box>
@@ -74,18 +73,21 @@ const InvoiceItem = ({ invoice }) => (
 const Invoices = () => {
   return (
     <Box sx={{ 
-      p: 3, 
+      p: 2, 
       bgcolor: '#001529', 
       borderRadius: 4,
-      maxWidth: '800px'
+      maxWidth: '800px',
+      height: '342px',
+      background: 'linear-gradient(127.09deg, rgba(6, 11, 40, 0.94) 19.41%, rgba(10, 14, 35, 0.49) 76.65%)'
+
     }}>
       <Box sx={{ 
         display: 'flex', 
         justifyContent: 'space-between',
         alignItems: 'center',
-        mb: 3
+        mb: 2
       }}>
-        <Typography variant="h5" color="white">
+        <Typography variant="h5" color="white"  fontSize={16}>
           Invoices
         </Typography>
         <Button 
@@ -97,11 +99,13 @@ const Invoices = () => {
             }
           }}
         >
+          <Typography fontSize={12}>
           VIEW ALL
+          </Typography>
         </Button>
       </Box>
 
-      <Stack spacing={1}>
+      <Stack spacing={1.5}>
         {invoices.map((invoice) => (
           <InvoiceItem key={invoice.id} invoice={invoice} />
         ))}

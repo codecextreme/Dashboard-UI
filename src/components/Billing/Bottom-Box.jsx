@@ -5,16 +5,18 @@ import EditIcon from '@mui/icons-material/Edit';
 const PaymentMethod = () => {
   return (
     <Box sx={{ 
-      p: 3, 
+      p: 2, 
       bgcolor: '#001529', 
       borderRadius: 4,
-      maxWidth: '800px'
+      maxWidth: '800px',
+      background: 'linear-gradient(127.09deg, rgba(6, 11, 40, 0.94) 19.41%, rgba(10, 14, 35, 0.49) 76.65%)'
+
     }}>
       <Box sx={{ 
         display: 'flex', 
         justifyContent: 'space-between',
         alignItems: 'center',
-        mb: 1
+        mb: 2
       }}>
         <Typography variant="h6" color="white" fontSize={16}>
           Payment Method
@@ -28,7 +30,9 @@ const PaymentMethod = () => {
             }
           }}
         >
+          <Typography fontSize={12}>
           ADD A NEW CARD
+          </Typography>
         </Button>
       </Box>
 
@@ -38,16 +42,23 @@ const PaymentMethod = () => {
         flexWrap: 'wrap'
       }}>
         {/* Mastercard */}
-        <Box sx={{
-          flex: 1,
-          maxWidth: '320px',
-          p: 2,
-          bgcolor: 'rgba(255, 255, 255, 0.05)',
-          borderRadius: 3,
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center'
-        }}>
+        <Box
+  sx={{
+    flex: 1,
+    maxWidth: '320px',
+    height: '60px',
+    p: 1,
+    bgcolor: 'rgba(255, 255, 255, 0.05)',
+    borderRadius: 3,
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    border: '2px solid', // 🟰 simple border
+    borderImageSlice: 1, // 🟰 important for showing gradient properly
+    borderImageSource: 'radial-gradient(69.43% 69.43% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)'
+  }}
+>
+
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
             <Box sx={{ 
               display: 'flex', 
@@ -76,21 +87,27 @@ const PaymentMethod = () => {
               7812 2139 0823 XXXX
             </Typography>
           </Box>
-          <EditIcon sx={{ color: 'gray', cursor: 'pointer'}} />
+          <EditIcon sx={{ color: 'gray', cursor: 'pointer' , width: '16px'}} />
         </Box>
 
         {/* Visa Card */}
-        <Box sx={{
-          flex: 1,
-          maxWidth: '320px',
-          maxHeight: '80px',
-          p: 3,
-          bgcolor: 'rgba(255, 255, 255, 0.05)',
-          borderRadius: 3,
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center'
-        }}>
+        <Box
+  sx={{
+    flex: 1,
+    maxWidth: '320px',
+    height: '60px',
+    p: 1,
+    bgcolor: 'rgba(255, 255, 255, 0.05)',
+    borderRadius: 3,
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    border: '2px solid', // 🟰 simple border
+    borderImageSlice: 1, // 🟰 important for showing gradient properly
+    borderImageSource: 'radial-gradient(69.43% 69.43% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)'
+  }}
+>
+
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
             <Typography 
               sx={{ 
@@ -106,7 +123,7 @@ const PaymentMethod = () => {
               7812 2139 0823 XXXX
             </Typography>
           </Box>
-          <EditIcon sx={{ color: 'gray', cursor: 'pointer' }} />
+          <EditIcon sx={{ color: 'gray', cursor: 'pointer', width: '16px' }} />
         </Box>
       </Box>
     </Box>
