@@ -1,17 +1,66 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Index.css";
 import background from "../../../src/assets/Media/Images/background.png";
 import Navbar from "../../components/Navbar/Navbar";
 import Switch from "@mui/material/Switch";
 import { useNavigate } from "react-router-dom";
+import CircularProgress from "@mui/material/CircularProgress";
+
+// ✅ Firebase imports
+import { auth, db } from "../../../firebase"; // Adjust path as needed
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { doc, getDoc } from "firebase/firestore";
 
 export default function SignIn() {
   const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [rememberMe, setRememberMe] = useState(false);
+
+  useEffect(() => {
+    const savedEmail = localStorage.getItem("rememberedEmail");
+    const savedPassword = localStorage.getItem("rememberedPassword");
+
+    if (savedEmail && savedPassword) {
+      setEmail(savedEmail);
+      setPassword(savedPassword)
+      setRememberMe(true);
+    }
+  }, []);
+
+  const handleLogin = async () => {
+    setLoading(true);
+    try {
+      const userCredential = await signInWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+
+      if (rememberMe) {
+        localStorage.setItem("rememberedEmail", email);
+        localStorage.setItem("rememberedPassword", password);
+
+      } else {
+        localStorage.removeItem("rememberedEmail");
+        localStorage.removeItem("rememberedPassword");
+
+      }
+
+      navigate("/dashboard");
+    } catch (error) {
+      console.error("Login error:", error.message);
+      alert(error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="signinj">
       <Navbar />
-      
+
       <div className="signin-containerj">
         <div className="left-sidej">
           <img src={background} alt="background" className="imgj" />
@@ -23,18 +72,41 @@ export default function SignIn() {
         <div className="right-sidej">
           <div className="content1j">
             <h2>Nice to see you!</h2>
-            <p>Enter your email and password to sign in </p>
+            <p>Enter your email and password to sign in</p>
           </div>
           <div className="signin-boxj">
             <p>Email</p>
-            <input type="email" placeholder="Your Email Address" />
+            <input
+              type="email"
+              placeholder="Your Email Address"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
             <p>Password</p>
-            <input type="password" placeholder="Your Password" />
+            <input
+              type="password"
+              placeholder="Your Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
             <div className="switch">
-              <Switch defaultChecked />
+              <Switch
+                checked={rememberMe}
+                onChange={(e) => setRememberMe(e.target.checked)}
+              />
               <p>Remember me?</p>
             </div>
-            <button>SIGN IN</button>
+            <button onClick={handleLogin} disabled={loading}>
+              {loading ? (
+                <CircularProgress
+                  size={18}
+                  sx={{ color: "white", marginRight: "8px" }}
+                />
+              ) : (
+                "SIGN IN"
+              )}
+            </button>
+
             <div className="lastpj">
               <p>Don't have an account? </p>
               <span onClick={() => navigate("/signup")}>Sign up</span>

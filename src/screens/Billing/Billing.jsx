@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Sidebar from "../../components/Sidebar/Sidebar";
+import Topbar from "../../components/Top-Bar/Topbar";
 import TopBox_2 from "../../components/Billing/TopBox-2";
 import TopBox_1 from "../../components/Billing/TopBox-1";
 import Bottom_Box from "../../components/Billing/Bottom-Box";
@@ -23,27 +24,8 @@ export default function Billing() {
       </div>
       <div className="main-column">
         <div className="top-bar">
-          <div className="left">
-            <div className="p-span">
-              <p>Pages</p> <span> / Tables</span>
-            </div>
-            <h4>Tables</h4>
-          </div>
-          <div className="right">
-            <div className="search-container">
-              <input type="search" placeholder="Search..." />
-              <span className="search-icon">
-                <img src={search} alt="" />
-              </span>
-            </div>
-            <div className="sign-in-text">
-              <img src={sin1} alt="" />
-              <p>Sign in</p>
-            </div>
-            <img src={setting} alt="" />
-            <img src={bell} alt="" />
-          </div>
-        </div>
+      <Topbar page="Pages" title="/ Billing"  subtitle="Billing"/>
+     </div>
         <div className="top-box">
           <div className="topBox-left">
             <div className="top-upper1">

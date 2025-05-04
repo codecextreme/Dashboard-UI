@@ -1,6 +1,7 @@
 import React from "react";
 import "./Tables.css";
 import Sidebar from "../../components/Sidebar/Sidebar";
+import Topbar from "../../components/Top-Bar/Topbar";
 import Container1 from "../../components/Tables/Container1";
 import Container2 from "../../components/Tables/Container2";
 import Footer from "../../components/Footer/Footer";
@@ -18,26 +19,7 @@ export default function Tables() {
 
       <div className="main-column">
         <div className="top-bar">
-          <div className="left">
-            <div className="p-span">
-              <p>Pages</p> <span> / Tables</span>
-            </div>
-            <h4>Tables</h4>
-          </div>
-          <div className="right">
-            <div className="search-container">
-              <input type="search" placeholder="Search..." />
-              <span className="search-icon">
-                <img src={search} alt="" />
-              </span>
-            </div>
-            <div className="sign-in-text">
-              <img src={sin1} alt="" />
-              <p>Sign in</p>
-            </div>
-            <img src={setting} alt="" />
-            <img src={bell} alt="" />
-          </div>
+      <Topbar page="Pages" title="/ Tables"  subtitle="Tables"/>
         </div>
         <div className="container1">
           <Container1/>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Dashboard.css";
 import { useNavigate } from "react-router-dom";
 import Sidebar from "../../components/Sidebar/Sidebar";
+import Topbar from "../../components/Top-Bar/Topbar";
 import search from "../../../src/assets/Media/Icons/search.png";
 import sin1 from "../../../src/assets/Media/Icons/sin1.png";
 import setting from "../../../src/assets/Media/Icons/setting.png";
@@ -40,26 +41,7 @@ export default function Dashboard() {
         </div>
         <div className="dashboard-content">
           <div className="top">
-            <div className="left">
-              <div className="p-span">
-              <p>Pages</p> <span> / Dashboard</span>
-              </div>
-              <h4>Dashboard</h4>
-            </div>
-            <div className="right">
-              <div className="search-container">
-                <input type="search" placeholder="Search..." />
-                <span className="search-icon">
-                  <img src={search} alt="" />
-                </span>
-              </div>
-              <div className="sign-in-text">
-                <img src={sin1} alt="" />
-                <p>Sign in</p>
-              </div>
-              <img src={setting} alt="" />
-              <img src={bell} alt="" />
-            </div>
+      <Topbar page="Pages" title="/ Dashboard"  subtitle="Dashboard"/>
           </div>
 
           <div className="top2">

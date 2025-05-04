@@ -44,7 +44,7 @@ export default function Sidebar() {
 <span >Billing</span>
   </li>
 
-  <li className="icons" onClick={() => navigate("/rtl")}>
+  <li className="icons" onClick={() => navigate("/practice")}>
           <div className="icon-box">
   <img src={rtl} alt="Profile Icon"/>
 </div>
