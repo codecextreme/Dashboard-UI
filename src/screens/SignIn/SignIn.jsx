@@ -63,14 +63,13 @@ export default function SignIn() {
 
       <div className="signin-containerj">
         <div className="left-sidej">
-          <img src={background} alt="background" className="imgj" />
-          <div className="text-overlayj">
+          <div className="text-overlayj1">
             <p>INSPIRED BY THE FUTURE:</p>
             <h2>THE VISION UI DASHBOARD</h2>
           </div>
         </div>
         <div className="right-sidej">
-          <div className="content1j">
+          <div className="contentj">
             <h2>Nice to see you!</h2>
             <p>Enter your email and password to sign in</p>
           </div>
@@ -107,7 +106,7 @@ export default function SignIn() {
               )}
             </button>
 
-            <div className="lastpj">
+            <div className="lastpj1">
               <p>Don't have an account? </p>
               <span onClick={() => navigate("/signup")}>Sign up</span>
             </div>
@@ -115,7 +114,7 @@ export default function SignIn() {
           <p className="paraj">
             @ 2021, Made with ❤️ by Simmmple & Creative Tim for a better web
           </p>
-          <div className="endj">
+          <div className="endj1">
             <p>Marketplace</p>
             <p>Blog</p>
             <p>License</p>

@@ -42,7 +42,7 @@ const SettingItem = ({ label, enabled, onToggle }) => (
     <Typography
       color="white"
       sx={{
-        fontSize: '12px',
+        fontSize: '0.8rem',
         opacity: 1,
         lineHeight: 1
       }}
@@ -79,7 +79,7 @@ const PlatformSettings = () => {
         variant="h6"
         color="white"
         gutterBottom
-        sx={{ fontSize: '16px', mb: 1 }}
+        sx={{ fontSize: '1rem', mb: 1 }}
       >
         Platform Settings
       </Typography>
@@ -90,7 +90,7 @@ const PlatformSettings = () => {
             color="gray"
             sx={{
               mb: 0.8,
-              fontSize: '12px',
+              fontSize: '0.8rem',
               letterSpacing: '0.03em'
             }}
           >
@@ -111,7 +111,7 @@ const PlatformSettings = () => {
             color="gray"
             sx={{
               mb: 0.8,
-              fontSize: '12px',
+              fontSize: '0.8rem',
               letterSpacing: '0.03em'
             }}
           >

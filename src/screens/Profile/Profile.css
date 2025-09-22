@@ -113,7 +113,7 @@
 
 .rise{
     min-height: 3rem; 
-    width: 45%;
+    width: 50%;
     border-radius: 14px;
     background: linear-gradient(126.97deg, rgba(6, 11, 38, 0.74) 28.26%, rgba(26, 31, 55, 0.5) 91.2%);
     padding: 0.5rem;
@@ -149,18 +149,18 @@
 /* Text styling inside boxes */
 .s400 p {
     color: #A0AEC0;
-    font-size: 8px;
+    font-size: 0.8rem;
 }
 
 .s400 h6 {
     color: white;
-    font-size: 12px;
+    font-size: 1rem;
 }
 
 /* Small adjustments */
 .content {
     color: white;
-    font-size: 0.9em;
+    font-size: 1rem;
 }
 
 .content p{

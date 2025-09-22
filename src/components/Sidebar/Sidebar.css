@@ -120,6 +120,11 @@
   justify-content: center;
 }
 
+.icon img{
+   width: 50%;
+  height: 50%;
+}
+
 .bottom-box .content {
   margin-top: 0.8rem;
 }

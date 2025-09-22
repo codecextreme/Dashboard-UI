@@ -25,52 +25,52 @@ const ProfileInfo = () => {
         sx={{
           mb: 1,
           mt: 1,
-          fontSize: '11.7px',
+          fontSize: '0.75rem',
           lineHeight: '1',
         }}
       >
         Hi, I'm Mark Johnson, Decisions: If you can't decide, the answer is no. If two equally difficult paths, choose the one more painful in the short term.
       </Typography>
 
-      <Stack spacing={1}>
+      <Stack spacing={0.8}>
         <Box sx={{ display: 'flex', gap: 1 }}>
-          <Typography color="gray" sx={{ width: '120px', fontSize: 12, marginTop: 2 }}>
+          <Typography color="gray" sx={{ width: '120px', fontSize: '0.75rem', marginTop: 2 }}>
             Full Name:
           </Typography>
-          <Typography color="white" fontSize={12} marginTop={2}>
+          <Typography color="white" fontSize={'0.75rem'} marginTop={2}>
             Mark Johnson
           </Typography>
         </Box>
 
         <Box sx={{ display: 'flex', gap: 1 }}>
-          <Typography color="gray" sx={{ width: '120px', fontSize: 12 }}>
+          <Typography color="gray" sx={{ width: '120px', fontSize: "0.75rem" }}>
             Mobile:
           </Typography>
-          <Typography color="white" fontSize={12}>
+          <Typography color="white" fontSize={'0.75rem'}>
             (44) 123 1234 123
           </Typography>
         </Box>
 
         <Box sx={{ display: 'flex', gap: 1 }}>
-          <Typography color="gray" sx={{ width: '120px', fontSize: 12 }}>
+          <Typography color="gray" sx={{ width: '120px', fontSize: '0.75rem' }}>
             Email:
           </Typography>
-          <Typography color="white" fontSize={12}>
+          <Typography color="white" fontSize={'0.75rem'}>
             mark@simmmple.com
           </Typography>
         </Box>
 
         <Box sx={{ display: 'flex', gap: 1 }}>
-          <Typography color="gray" sx={{ width: '120px', fontSize: 12 }}>
+          <Typography color="gray" sx={{ width: '120px', fontSize: '0.75rem' }}>
             Location:
           </Typography>
-          <Typography color="white" fontSize={12}>
+          <Typography color="white" fontSize={'0.75rem'}>
             United States
           </Typography>
         </Box>
 
         <Box sx={{ display: 'flex', gap: 1, alignItems: 'center' }}>
-          <Typography color="gray" sx={{ width: '120px', fontSize: 12 }}>
+          <Typography color="gray" sx={{ width: '120px', fontSize: '0.75rem' }}>
             Social Media:
           </Typography>
           <Stack direction="row" spacing={1}>
