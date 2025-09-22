@@ -73,7 +73,7 @@ export default function SignIn() {
             <h2>Nice to see you!</h2>
             <p>Enter your email and password to sign in</p>
           </div>
-          <div className="signin-boxj">
+          <div className="signin-boxj1">
             <p>Email</p>
             <input
               type="email"

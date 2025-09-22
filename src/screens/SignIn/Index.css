@@ -48,7 +48,7 @@
   .contentj {
     margin-top: 20vh;
     flex-direction: column;
-    margin-right: 1%;
+    width: 60%;
   }
   
   .contentj h2 {
@@ -66,14 +66,15 @@
     justify-content: center;
   }
   
-  .signin-boxj {
+  .signin-boxj1 {
     padding: 30px;
     backdrop-filter: blur(20px);
     color: #fff;
     text-align: center;
+    width: 60%;
   }
   
-    input {
+    .signin-boxj1 input {
     width: 100%;
     padding: 12px;
     color: white;
@@ -86,7 +87,7 @@
     outline: none;
   }
   
-  .signin-boxj button {
+  .signin-boxj1 button {
     width: 100%;
     padding: 12px;
     background: rgba(0, 117, 255, 1);
@@ -99,11 +100,11 @@
     transition: background-color 0.3s;
   }
   
-  .signup-boxj button:hover {
+  .signup-boxj1 button:hover {
     background-color: #2a3ce2;
   }
   
-  .signin-boxj p{
+  .signin-boxj1 p{
     text-align: left;
     font-size: 0.9rem;
     font-weight: 400;
@@ -224,6 +225,124 @@
     font-size: 13px;
   }
 }
+
+/* Extra Large Screens - MacBook 16" or larger */
+@media screen and (min-width: 1600px) {
+  .left-sidej, .right-sidej {
+    width: 50%;
+  }
+
+  .contentj {
+    width: 50%; /* smaller width to fit bigger screen nicely */
+    margin-top: 18vh; /* adjust vertical spacing */
+  }
+
+  .contentj h2 {
+    font-size: 2.5rem;
+  }
+
+  .contentj p {
+    font-size: 1rem;
+  }
+
+  .signin-boxj1 {
+    width: 50%;
+    padding: 35px;
+  }
+
+  .signin-boxj1 input {
+    font-size: 1rem;
+  }
+
+  .signin-boxj1 button {
+    font-size: 0.9rem;
+  }
+
+  .text-overlayj1 h2 {
+    font-size: 3rem;
+  }
+
+  .text-overlayj1 p {
+    font-size: 1.6rem;
+  }
+}
+
+/* Medium Screens - Standard laptops, 1440px */
+@media screen and (min-width: 1366px) and (max-width: 1599px) {
+  .left-sidej, .right-sidej {
+    width: 50%;
+  }
+
+  .contentj {
+    width: 55%;
+    margin-top: 19vh;
+  }
+
+  .contentj h2 {
+    font-size: 2.3rem;
+  }
+
+  .contentj p {
+    font-size: 0.95rem;
+  }
+
+  .signin-boxj1 {
+    width: 55%;
+    padding: 32px;
+  }
+
+  .signin-boxj1 input {
+    font-size: 0.95rem;
+  }
+
+  .signin-boxj1 button {
+    font-size: 0.85rem;
+  }
+
+  .text-overlayj1 h2 {
+    font-size: 2.8rem;
+  }
+
+  .text-overlayj1 p {
+    font-size: 1.5rem;
+  }
+}
+
+/* Small Laptops - keep your existing media query */
+@media screen and (max-width: 1280px) and (min-width: 1024px) {
+  .left-sidej,
+  .right-sidej {
+    width: 46%;
+  }
+
+  .signin-boxj1 {
+    width: 300px;
+    padding: 20px;
+  }
+
+  .contentj {
+    width: 60%;
+    margin-top: 20vh;
+    text-align: center;
+  }
+
+  .contentj h2 {
+    font-size: 2rem;
+  }
+
+  .contentj p {
+    font-size: 0.9rem;
+  }
+
+  .text-overlayj1 h2 {
+    font-size: 2.5rem;
+  }
+
+  .text-overlayj1 p {
+    font-size: 1.4rem;
+  }
+}
+
 
 
   
