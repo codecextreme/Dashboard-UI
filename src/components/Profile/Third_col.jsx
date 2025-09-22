@@ -8,10 +8,10 @@ const ProfileInfo = () => {
   return (
     <Box
       sx={{
-        width: '310px',
-        height: '250px',
+        width: '100%',
+        height: '44vh',
         p: 2,
-        borderRadius: 4,
+        borderRadius: '20px',
         overflow: 'hidden',
         background: 'linear-gradient(127.09deg, rgba(6, 11, 40, 0.94) 19.41%, rgba(10, 14, 35, 0.49) 76.65%)',
       }}

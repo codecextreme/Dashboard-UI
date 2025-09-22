@@ -180,4 +180,54 @@
   }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Small laptop screens */
+@media screen and (max-width: 1280px) and (min-width: 1024px) {
+  .signup-container, .signin-containerj {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .left-side, .left-sidej,
+  .right-side, .right-sidej {
+    width: 46%; /* slightly narrower to fit smaller screens */
+  }
+
+  .img, .imgj {
+    width: 100%;
+    height: auto; /* maintain aspect ratio */
+  }
+
+  .signup-box, .signin-boxj {
+    width: 300px; /* smaller boxes for smaller laptops */
+    padding: 20px;
+  }
+
+  .content1, .content1j {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  /* Adjust font sizes slightly for smaller screens */
+  .content1 h2, .content1j h2 {
+    font-size: 28px;
+  }
+  
+  .content1 p, .content1j p {
+    font-size: 13px;
+  }
+}
+
+
   

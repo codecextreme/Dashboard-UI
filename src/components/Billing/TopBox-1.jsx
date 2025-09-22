@@ -3,17 +3,17 @@ import { Box, Typography } from '@mui/material';
 
 const CreditCard = () => {
   return (
-    <Box
-      sx={{
-        width: '305px',
-        height: '190px',
-        borderRadius: '20px',
-        p: 2,
-        background: 'linear-gradient(135deg, #0055ff 0%, #000066 100%)',
-        position: 'relative',
-        overflow: 'hidden'
-      }}
-    >
+   <Box
+  sx={{
+    width: '100%',      // full width of parent
+    height: '100%',     // full height of parent
+    borderRadius: '20px',
+    p: 2,
+    background: 'linear-gradient(135deg, #0055ff 0%, #000066 100%)',
+    position: 'relative',
+    overflow: 'hidden'
+  }}
+>
       {/* Card Brand */}
       <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 6 }}>
         <Typography

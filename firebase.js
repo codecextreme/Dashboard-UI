@@ -1,14 +1,10 @@
-// Import the functions you need from the SDKs you need
+// Your existing Firebase config and initializations
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
+import { getMessaging } from "firebase/messaging"; 
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyA0btAIaDUcZEHoNq6roAJUu5MzW8Qdbxw",
   authDomain: "vision-ui-73b05.firebaseapp.com",
@@ -19,8 +15,8 @@ const firebaseConfig = {
   measurementId: "G-0WXD382CPY",
 };
 
-// Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 export const auth = getAuth(app);
 export const db = getFirestore(app);
+export const messaging = getMessaging(app); // ✅ Add this

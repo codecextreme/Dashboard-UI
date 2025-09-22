@@ -8,6 +8,7 @@ import profile from "../../../src/assets/Media/Icons/profile.png";
 import signin from "../../../src/assets/Media/Icons/sgnin.png";
 import signup from "../../../src/assets/Media/Icons/sharp.png";
 import { useNavigate } from "react-router-dom";
+import help from '../../assets/Media/Icons/help.png'
 
 
 
@@ -77,6 +78,7 @@ export default function Sidebar() {
       </div>
       <div className="bottom-box">
         <div className="icon">
+          <img src={help} alt="" />
            </div>
            <div className="content">
            <h6>Need help?</h6>

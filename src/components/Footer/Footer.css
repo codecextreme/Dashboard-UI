@@ -1,22 +1,53 @@
 .footer {
-    display: flex !important;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    margin-top: 13px;
-  }
-  
-  .footer ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .footer ul li {
-    cursor: pointer;
-    color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* allow wrapping on smaller screens */
+  color: white;
+  margin-top: 13px;
+  padding: 10px 20px; /* add breathing space */
+  font-size: 14px;
+}
+
+.footer p {
+  margin: 5px 0;
+  text-align: center;
+  flex: 1 1 100%; /* full width on small screens */
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 5px 0;
+  padding: 0;
+  justify-content: center;
+  flex: 1 1 100%; /* full width if needed */
+}
+
+.footer ul li {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer ul li:hover {
+  color: #0075ff; /* subtle hover effect */
+}
+
+/* Medium+ screens keep row layout */
+@media (min-width: 992px) {
+  .footer {
+    flex-wrap: nowrap;
     font-size: 16px;
   }
-  
+  .footer p {
+    flex: unset;
+    text-align: left;
+  }
+  .footer ul {
+    flex: unset;
+    justify-content: flex-end;
+  }
+}

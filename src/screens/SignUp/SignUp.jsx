@@ -94,9 +94,17 @@ export default function SignUp() {
           <div className="signup-box">
             <h2>Register With</h2>
             <div className="icon3">
-              <div className="icon-div"><img src={facebook} alt="" /></div>
-              <div className="icon-div"><img src={apple} alt="" /></div>
-              <div className="icon-div" onClick={handleGoogleSignUp} style={{ cursor: "pointer" }}>
+              <div className="icon-div">
+                <img src={facebook} alt="" />
+              </div>
+              <div className="icon-div">
+                <img src={apple} alt="" />
+              </div>
+              <div
+                className="icon-div"
+                onClick={handleGoogleSignUp}
+                style={{ cursor: "pointer" }}
+              >
                 <img src={google} alt="Sign up with Google" />
               </div>
             </div>

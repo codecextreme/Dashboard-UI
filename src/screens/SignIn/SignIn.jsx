@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 import CircularProgress from "@mui/material/CircularProgress";
 
 // ✅ Firebase imports
-import { auth, db } from "../../../firebase"; // Adjust path as needed
+import { auth, db } from "../../../firebase"; 
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { doc, getDoc } from "firebase/firestore";
 

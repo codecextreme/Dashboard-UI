@@ -5,12 +5,18 @@ import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 
 const CreditBalance = () => {
   return (
-    <Box sx={{ 
-      bgcolor: '#001529',
-      borderRadius: 4,
-      p: 3,
-      maxWidth: 600
-    }}>
+   <Box
+  sx={{
+    width: '100%',
+    height: '100%',
+    bgcolor: '#001529',
+    borderRadius: 4,
+    p: 3,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between'
+  }}
+>
       {/* Main Balance Card */}
       <Box sx={{
         bgcolor: 'rgba(255, 255, 255, 0.05)',

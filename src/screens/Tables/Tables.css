@@ -1,20 +1,18 @@
 .tables{
     width: 100%;
     display: flex;
-    background: url('../../assets/Media/Images/dashboard.png') no-repeat center center;
+    background: url('../../assets/Media/Images/profile.png') no-repeat center center;
     background-size: cover;
     position: absolute;
     top: 0;
     width: 100%;
     height: 935px;
     z-index: -1;
-    backdrop-filter: blur(272px); 
-    /* position: relative; */
+    
 }
 
 .main-column{
     width: 100%;
-    /* background-color: antiquewhite; */
 }
 
   .container1{

@@ -43,13 +43,13 @@ const projects = [
 const Projects = () => {
   return (
     <Box sx={{ 
-      width: '770px',
-      height: '340px',
+      width: '100%',
+      height: '59.5vh',
       pl: 2,
       pt: 1,
       pr: 2,
       background: 'linear-gradient(87.09deg, rgba(6, 11, 40, 0.94) 19.41%, rgba(10, 14, 35, 0.49) 26.65%)',
-      borderRadius: 4,
+      borderRadius: "20px",
     }}>
       <Typography variant="h6" color="white" >
         Projects

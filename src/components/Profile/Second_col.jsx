@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 export default function Second_col() {
   const [progress2] = useState(68);
 
-  const circleSize = 130;
+  const circleSize = 100;
   const strokeWidth = 12;
   const radius = (circleSize - strokeWidth) / 2;
   const circumference = 2 * Math.PI * radius;

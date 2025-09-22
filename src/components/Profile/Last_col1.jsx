@@ -69,9 +69,9 @@ const PlatformSettings = () => {
       sx={{
         p: 2,
         background: 'linear-gradient(27.09deg, rgba(6, 11, 40, 0.94) 19.41%, rgba(10, 14, 35, 0.49) 36.65%)',
-        borderRadius: 4,
-        height: '340px',
-        width: '240px',
+        borderRadius: '20px',
+        height: '59.5vh',
+        width: '100%',
         boxSizing: 'border-box'
       }}
     >

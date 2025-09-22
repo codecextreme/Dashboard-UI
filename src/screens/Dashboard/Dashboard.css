@@ -7,7 +7,7 @@
 }
 
 .dashboard-background {
-  background: url('../../assets/Media/Images/dashboard.png') no-repeat center center;
+  background: url('../../assets/Media/Images/profile.png') no-repeat center center;
   background-size: cover;
   position: absolute;
   top: 0;
@@ -15,7 +15,6 @@
   height: 1260px;
   top: -120px;
   z-index: -1;
-  backdrop-filter: blur(272px); 
 }
 
 .dbcolumn {

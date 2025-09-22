@@ -4,14 +4,18 @@ import EditIcon from '@mui/icons-material/Edit';
 
 const PaymentMethod = () => {
   return (
-    <Box sx={{ 
-      p: 2, 
-      bgcolor: '#001529', 
-      borderRadius: 4,
-      maxWidth: '800px',
-      background: 'linear-gradient(127.09deg, rgba(6, 11, 40, 0.94) 19.41%, rgba(10, 14, 35, 0.49) 76.65%)'
-
-    }}>
+<Box
+  sx={{
+    width: '100%',
+    height: '100%',
+    p: 2,
+    borderRadius: 4,
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 2,
+    background: 'linear-gradient(127.09deg, rgba(6, 11, 40, 0.94) 19.41%, rgba(10, 14, 35, 0.49) 76.65%)'
+  }}
+>
       <Box sx={{ 
         display: 'flex', 
         justifyContent: 'space-between',

@@ -9,10 +9,10 @@ const Navbar = () => {
   return (
     <Box
       sx={{
-        width: '1020px',
-        height: '80px',
+        width: '100%',
+        height: '15vh',
         background: 'linear-gradient(112.83deg, rgba(6, 11, 40, 0.94) 0%, rgba(10, 14, 35, 0.62) 110.84%)',
-        borderRadius: 4,
+        borderRadius: '20px',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
