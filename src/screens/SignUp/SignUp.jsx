@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./SignUp.css";
-import background from "../../../src/assets/Media/Images/background.png";
 import Navbar from "../../components/Navbar/Navbar";
 import facebook from "../../../src/assets/Media/Icons/facebook.png";
 import apple from "../../../src/assets/Media/Icons/apple.png";
@@ -78,7 +77,6 @@ export default function SignUp() {
       <Navbar />
       <div className="signup-container">
         <div className="left-side">
-          <img src={background} alt="background" className="img" />
           <div className="text-overlay">
             <p>INSPIRED BY THE FUTURE:</p>
             <h2>THE VISION UI DASHBOARD</h2>

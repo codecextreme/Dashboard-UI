@@ -20,7 +20,7 @@
     align-items: center;
     overflow: hidden;
     background: url("../../../src/assets/Media/Images/background.png") no-repeat center center;
-    background-size: cover; /* scales image to cover the div */
+    background-size: cover; 
   }
   
  
