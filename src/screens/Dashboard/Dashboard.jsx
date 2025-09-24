@@ -33,7 +33,7 @@ export default function Dashboard() {
   const offset2 = circumference - (progress2 / 10) * circumference;
 
   return (
-    <div className="dashboard" style={{ position: "relative" }}>
+    <div className="dashboard">
       <div className="dashboard-background"></div>
       <div className="dbcolumn">
         <div className="sidebarbox">
@@ -53,7 +53,7 @@ export default function Dashboard() {
                   <p>+55%</p>
                 </div>
               </div>
-              <div className="icon-div">
+              <div className="icon-div1">
                 <img src={wallet} alt="Profile Icon" />
               </div>
             </div>
@@ -65,7 +65,7 @@ export default function Dashboard() {
                   <p>+5%</p>
                 </div>
               </div>
-              <div className="icon-div">
+              <div className="icon-div1">
                 <img src={glob} alt="Profile Icon" />
               </div>
             </div>
@@ -77,7 +77,7 @@ export default function Dashboard() {
                   <p>-14%</p>
                 </div>
               </div>
-              <div className="icon-div">
+              <div className="icon-div1">
                 <img src={text} alt="Profile Icon" />
               </div>
             </div>
@@ -89,7 +89,7 @@ export default function Dashboard() {
                   <p>+8%</p>
                 </div>
               </div>
-              <div className="icon-div">
+              <div className="icon-div1">
                 <img src={cart} alt="Profile Icon" />
               </div>
             </div>

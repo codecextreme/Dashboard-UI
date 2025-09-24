@@ -4,13 +4,11 @@
   align-items: center;
   flex-wrap: wrap; /* allow wrapping on smaller screens */
   color: white;
-  margin-top: 13px;
   padding: 10px 20px; /* add breathing space */
   font-size: 14px;
 }
 
 .footer p {
-  margin: 5px 0;
   text-align: center;
   flex: 1 1 100%; /* full width on small screens */
 }
@@ -19,8 +17,6 @@
   list-style: none;
   display: flex;
   gap: 20px;
-  margin: 5px 0;
-  padding: 0;
   justify-content: center;
   flex: 1 1 100%; /* full width if needed */
 }

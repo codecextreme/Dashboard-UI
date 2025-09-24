@@ -10,10 +10,8 @@
   background: url('../../assets/Media/Images/profile.png') no-repeat center center;
   background-size: cover;
   position: absolute;
-  top: 0;
   width: 100%;
   height: 1260px;
-  top: -120px;
   z-index: -1;
 }
 
@@ -26,48 +24,46 @@
 
 .sidebarbox {
   width: 18%;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .dashboard-content {
   width: 82%;
-  /* background-color: rgb(245, 211, 211);  */
+  padding: 20px;
 }
 
 
 /* Second Top Section */
 .top2 {
   display: flex;
-  gap: 15px;
+  gap: 2%;
   margin-top: 10px;
 }
 
 .topMenu {
   width: 23.5%;
-  height: 50px;
+  height: 9.4vh;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-radius: 15px;
+  padding: 8px;
   background: linear-gradient(126.97deg, rgba(6, 11, 38, 0.74) 28.26%, rgba(26, 31, 55, 0.5) 91.2%);
 }
 
-.content-div {
-  margin-top: 5px;
-  margin-left: 10px;
-}
+
 
 .content-div p {
   color: #A0AEC0;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
 }
 
-.topMenu .icon-div {
-  width: 35px;
-  height: 35px;
-  margin-top: 10px;
-  margin-right: 10px;
+.topMenu .icon-div1 {
+  width: 18%;
+  height: 100%;
   border-radius: 12px;
   border: none;
   background-color: #0075FF;
@@ -76,9 +72,9 @@
   justify-content: center;
 }
 
-.icon-div img {
-  width: 25px;
-  height: 25px;
+.icon-div1 img {
+  width: 1.5rem;
+  height: 1.5rem;
   object-fit: contain;
 }
 
@@ -87,64 +83,62 @@
 }
 
 .h-div h6 {
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 700;
 }
 
 .h-div p {
   color: #01B574;
+  font-size: 0.75rem;
 }
 
 /* Third Top Section */
 .top3 {
   display: flex;
-  gap: 15px;
-  margin-top: 15px;
+  gap: 2%;
+  margin-top: 2%;
 }
 
 .top3 .first-box {
   width: 38%;
-  height: 230px;
+  height: 40vh;
   border-radius: 20px;
   background: url('../../assets/Media/Images/ppic.png') no-repeat center center;
   background-size: cover;
   color: white;
+  padding: 1rem;
 }
 
-.top3-content {
-  margin-top: 10px;
-  margin-left: 10px;
-}
 
 .top3 .first-box h2 {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 600;
   margin-top: 5px;
 }
 
 .top3 .first-box span {
   color: #A0AEC0;
-  font-size: 14px;
+  font-size: 0.75rem;
   font-weight: 400;
 }
 
 .top3 .first-box p {
   margin-top: 10px;
   color: #A0AEC0;
-  font-size: 14px;
+  font-size: 0.75rem;
   font-weight: 400;
 }
 
 .top3 .second-box {
   width: 25%;
-  height: 230px;
+  height: 40vh;
   border-radius: 20px;
   background: linear-gradient(127.09deg, rgba(6, 11, 40, 0.94) 19.41%, rgba(10, 14, 35, 0.49) 76.65%);
 }
 
 .top3 .third-box {
-  width: 32.5%;
-  height: 230px;
+  width: 33%;
+  height: 40vh;
   border-radius: 20px;
   background: linear-gradient(126.97deg, rgba(6, 11, 40, 0.74) 28.26%, rgba(14, 21, 58, 0.71) 91.2%);
 }
@@ -152,21 +146,21 @@
 /* Mid Section */
 .mid-box {
   display: flex;
-  gap: 15px;
-  margin-top: 15px;
+  gap: 2%;
+  margin-top: 2%;
 }
 
 .mid-box1 {
-  width: 60%;
-  height: 330px;
+  width: 58%;
+  height: 58vh;
   border-radius: 20px;
   background: linear-gradient(126.97deg, rgba(6, 11, 40, 0.74) 28.26%, rgba(10, 14, 35, 0.71) 91.2%);
 
 }
 
 .mid-box2 {
-  width: 37%;
-  height: 330px;
+  width: 40%;
+  height: 58vh;
   border-radius: 20px;
 }
 
@@ -201,7 +195,7 @@
 }
 
 .progress-rectangle p {
-  font-size: 25px;
+  font-size: 1.5rem;
 }
 
 /* Third Box with Flex and Divs */
@@ -216,8 +210,8 @@
 }
 
 .third-box1 p {
-  margin-top: 12px;
-  margin-left: 12px;
+  margin-top: 0.75rem;
+  margin-left: 0.75rem;
 }
 
 .third-box2 {
@@ -231,43 +225,43 @@
   justify-content: center;
   border-radius: 20px;
   width: 70%;
-  height: 60px;
+  height: 10vh;
   background: linear-gradient(126.97deg, #060C29 28.26%, rgba(4, 12, 48, 0.5) 91.2%);
 }
 
 .third-div1 p{
   color: #A0AEC0;
   padding-top: 10px;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .third-div1 h4{
-  font-size: 14px;
-  margin-left: 10px;
+  font-size: 0.9rem;
+  margin-left: 0.7rem;
 }
 
 .third-div2 {
-  margin-top: 18px;
-  margin-left: 25px;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
   border-radius: 20px;
   width: 70%;
-  height: 60px;
+  height: 10vh;
   background: linear-gradient(126.97deg, #060C29 28.26%, rgba(4, 12, 48, 0.5) 91.2%);
 }
 
 .third-div2 p{
   color: #A0AEC0;
   padding-top: 10px;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .third-div2 h4{
-  font-size: 14px;
-  margin-left: 10px;
+  font-size: 0.9rem;
+  margin-left: 0.7rem;
 }
 
 .green-progress {
-  margin-top: 50px;
+  margin-top: 4rem;
 }
 
 .blue-progress-icon {
@@ -288,8 +282,8 @@
 }
 
 .icon-circle img {
-  width: 30px;
-  height: 30px;
+  width: 2rem;
+  height: 2rem;
 }
 
 /* Second Box Label */
@@ -299,35 +293,39 @@
 
 .top-left-label {
   position: absolute;
-  top: 10px;
-  left: 12px;
-  font-size: 14px;
+  top: 0.6rem;
+  left: 1rem;
+  font-size: 0.8rem;
   font-weight: 600;
   color: #ffffff;
   z-index: 2;
 }
 
 .last-box{
-  margin-top: 15px;
+  margin-top: 2%;
   width: 100%;
   height: 346px;
   display: flex;
+  gap: 2%;
 }
 
 .last-box1{
   width: 66%;
-  height: 346px;
-  color: aqua;
+  height: 61vh;
+
 }
 
 .last-box2{
   width: 31%;
-  height: 346px;
-  margin-left: 15px;
+  height: 61vh;
 }
 
 .footer{
   width: 99%;
 } 
+
+
+
+
 
 

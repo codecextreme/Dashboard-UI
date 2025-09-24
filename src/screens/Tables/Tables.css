@@ -4,33 +4,29 @@
     background: url('../../assets/Media/Images/profile.png') no-repeat center center;
     background-size: cover;
     position: absolute;
-    top: 0;
-    width: 100%;
-    height: 935px;
     z-index: -1;
     
 }
 
-.main-column{
-    width: 100%;
+.main-column8{
+    width: 80%;
+    padding: 1rem;
 }
 
-  .container1{
-    width: 97%;
-    height: 76.5vh;
-    margin-left: 15px;
-    margin-top: 20px;
+.sidebar-column{
+  width: 20%;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+  .container8{
+    width: 100%;
+    height: 74vh;
   }
 
   .container2{
-    width: 97%;
-    height: 63.5vh;
-    margin-left: 15px;
-    margin-top: 15px;
+    width: 100%;
+    height: 61vh;
+    margin-top: 1rem;
   }
 
-.footer-div{
-  width: 98%;
-  margin-left: 10px;
-  margin-top: 25px;
-}

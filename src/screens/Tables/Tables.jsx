@@ -17,11 +17,11 @@ export default function Tables() {
         <Sidebar />
       </div>
 
-      <div className="main-column">
+      <div className="main-column8">
         <div className="top-bar">
       <Topbar page="Pages" title="/ Tables"  subtitle="Tables"/>
         </div>
-        <div className="container1">
+        <div className="container8">
           <Container1/>
 
         </div>
